@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Curso de Bootstrap 4!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilos en Css -->
+    <style>
+      /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+    </style>
+
+        
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Carousel</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="first-slide" src="images/Naturaleza02.jpeg" width="1px" height="1px"   alt="First slide">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-left">
+             <center> <h1>¿Qué es la naturaleza?</h1>
+              <p>La <strong>  naturaleza</strong> es un concepto utilizado para referirse al mundo material o universo material</p>
+              <p><a class="btn btn-lg btn-primary" href="https://es.wikipedia.org/wiki/Naturaleza" role="button">Presiona aquí para más información</a></p></center>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="images/planetas.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <center><h1>¿Sabes cuál es el orden de los planetas?</h1>
+              <p>Los<strong> planetas </strong>son cuerpos celestes que giran alrededor de una estrella, de la que reciben su luz. </p>
+              <p><a class="btn btn-lg btn-primary" href="" role="button">Presiona aquí para más información</a></p></center>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="images/big-bang.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block text-right">
+              <center><h1><strong>La teoría del Big Bang</strong></h1>
+              <p>El <strong>Big Bang</strong> es cómo los astrónomos explican la forma en que comenzó el universo. Es la idea de que el universo comenzó como un solo punto. </p>
+              <p><a class="btn btn-lg btn-primary" href="https://es.wikipedia.org/wiki/Big_Bang" role="button">Pulsa aquí para obtener más información</a></p></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      
+      <!-- páginas de ustedes -->
+      <!-- páginas de ustedes -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Una hermosa página en la cuál puedes agregar diferentes cosas</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver, otra página </a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Una página en la cual puedes obtener información de .</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Una bonita página con la que puedes interactuar y saber más de .</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Las páginas son muy bonitas más cuando se tiene esto</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.row -->
+      
+      <div class="container1">
+      <center><h1> Noticias del día 25 de mayo del 2024 en México</h1></center>
+      </div>
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">¿Qué estados del país tienen alerta de tornado para este fin de semana? <span class="text-muted"></span></h2>
+          <p class="lead">Las autoridades de la Comisión Nacional del Agua y del Servicio Meteorológico Nacional advierten sobre la posible formación de tornados en distintos estados del país.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="images/tornado.png" alt="Generic placeholder image" >
+          <center><a href="https://www.elfinanciero.com.mx/nacional/2024/05/25/que-estados-del-pais-tienen-alerta-de-tornado-para-este-fin-de-semana-esto-dice-conagua/"> Pulsa aquí para más información</a></center>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+          <h2 class="featurette-heading">Colonias de Nuevo León se quedan sin agua en plena ola de calor<span class="text-muted"></span></h2>
+          <p class="lead">En distintas zonas del municipio de Santa Catarina, en Nuevo León, los vecinos llevan 4 días sin agua.</p>
+        </div>
+        <div class="col-md-5 pull-md-7">
+          <img class="featurette-image img-fluid mx-auto" src="images/sinagua.png" alt="Generic placeholder image">
+          <center><a href="https://www.elfinanciero.com.mx/estados/2024/05/25/colonias-de-nuevo-leon-se-quedan-sin-agua-en-plena-ola-de-calor/"> Pulsa aquí para más información</a></center>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">¡Bronce para México! Alexa Moreno gana medalla en gimnasia artística <span class="text-muted"></span></h2>
+          <p class="lead">La gimnasta mexicana Alexa Moreno ya clasificó a los Juegos Olímpicos para París 2024 y actualmente está en preparación.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="images/bronce.png" alt="Generic placeholder image">
+          <center><a href="https://www.elfinanciero.com.mx/deportes/2024/05/25/alexa-moreno-gano-medalla-en-copa-de-gimnasia-artistica/"> Pulsa aquí para más información</a></center>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Regresar al principio</a></p>
+        <p>&copy; 2024 UTP, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+      
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
